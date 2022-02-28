@@ -44,3 +44,19 @@ Next steps:
     echo 'source "/PATH_TO/emsdk/emsdk_env.sh"' >> $HOME/.bash_profile
 
 ```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  cout << "[WASM] Loaded" <<endl;
+  cout << "Hello Wasm" <<endl;
+}
+
+```
+
+```
+em++ test.cpp -o test.html
+```
